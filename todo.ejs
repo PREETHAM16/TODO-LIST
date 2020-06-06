@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TODO LIST</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="/assets/style.css" type="text/css" />
+  </head>
+  <body>
+    <div id="d">
+    <h1>WELCOME TO<img id="f" src="/assets/logo.png">ADD LIST</h1>
+    </div>
+    <br><br>
+    <img id="p" src="/assets/unicorn run.gif">
+    <div id="todos-table">
+      <form>
+        <input typr="text" placeholder="Add new item..." required  />
+        <button type="submit">Add Item</button>
+        </form>
+        <h1 id="m">YOURS TO DO LIST IS</h1>
+<ul>
+<% for(var i=0; i < todos.length ; i++){ %>
+<li><%= todos[i].item %></li>
+<% } %>
+</ul>
+</div>
+  </body>
+  <script src="/assets/todo-list.js"></script>
+</html>
